@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- or -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        /* Basic styling for the video in header */
+        #header .logo video {
+            width: 100%;
+            height: 200px;
+            max-width: 600px; /* Adjust based on your design */
+            display: block;
+        }
+
+        /* Additional styling for header elements */
+        #header {
+            background: transparent; /* Light background color */
+            padding: 10px 0;
+        }
+
+        #header .logo {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #header ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #header ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        #header ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .icon a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .input {
+            padding: 5px;
+            margin-top: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header id="header">
+            <div class="logo">
+                <video autoplay loop muted >
+                    <source src="../../images/home page/Black White Modern Monochrome Name Initial Logo_20240905_121717_0001.mp4" type="video/mp4">
+                </video>
+                <ul>
+                    <a href="../home page/index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="../shope page/index.html" target="_blank">
+                        <li>Shop</li>
+                    </a>
+                    <a href="../features page/index.html">
+                        <li>Features</li>
+                    </a>
+                    <a href="../Blog page/index.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <nav>
+                <div class="icon">
+                    <a href="#"><i class='bx bx-search-alt-2' id="Search"></i></a>
+                    <a href="#"><i class='bx bxs-cart'></i></a>
+                    <a href="#"><i class='bx bx-heart'></i></a>
+                    <a href="#"><i class='bx bxs-user-circle'></i>Abhishek</a>
+                </div>
+                <input type="text" placeholder="  Search" class="input">
+            </nav>
+        </header>
+    </section>
+     <!-- Hero Section -->
+     <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Amazing Blog</h1>
+            <p>Your daily dose of inspiration and information.</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="blog-section">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-posts">
+            <div class="post">
+                <img src="../../../main-project-main/png/slide-06.jpg" alt="Blog 1">
+                <div class="post-content">
+                    <h3>Blog Post Title 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget ligula nec tortor ultrices blandit.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="../../../main-project-main/png/slide-04.jpg" alt="Blog 2">
+                <div class="post-content">
+                    <h3>Blog Post Title 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget ligula nec tortor ultrices blandit.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src="../../../main-project-main/png/thumb-01.jpg" alt="Blog 3">
+                <div class="post-content">
+                    <h3>Blog Post Title 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget ligula nec tortor ultrices blandit.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

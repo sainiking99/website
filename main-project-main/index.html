@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        /* Basic styling for the video in header */
+        #header .logo video {
+            width: 100%;
+            height: 200px;
+            max-width: 600px; /* Adjust based on your design */
+            display: block;
+        }
+
+        /* Additional styling for header elements */
+        #header {
+            background: transparent; /* Light background color */
+            padding: 10px 0;
+            z-index: 999;
+        }
+
+        #header .sticky {
+            background: #fff;
+            padding: 0.5rem 10rem;
+            box-shadow: 0 2px 5px #333;
+        }
+
+        #header .logo {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #header ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #header ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        #header ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .icon a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .input {
+            padding: 5px;
+            margin-top: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header id="header">
+            <div class="logo">
+                <video autoplay loop muted >
+                    <source src="images/home page/Black White Modern Monochrome Name Initial Logo_20240905_121717_0001.mp4" type="video/mp4">
+                </video>
+                <ul>
+                    <a href="../main-project-main/file/home page/index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="../main-project-main/file/shope page/index.html" target="_blank">
+                        <li>Shop</li>
+                    </a>
+                    <a href="../main-project-main/file/features page/index.html">
+                        <li>Features</li>
+                    </a>
+                    <a href="../main-project-main/file/Blog page/index.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <nav>
+                <div class="icon">
+                    <a href="#"><i class='bx bx-search-alt-2' id="Search"></i></a>
+                    <a href="#"><i class='bx bxs-cart'></i></a>
+                    <a href="#"><i class='bx bx-heart'></i></a>
+                    <a href="#"><i class='bx bxs-user-circle'></i>Abhishek Saini</a>
+                </div>
+                <input type="text" placeholder="Search" class="input">
+            </nav>
+        </header>
+    </section>
+
+    <section>
+        <div class="home">
+            <div class="contant">
+                <p>Men New-season</p>
+                <h1>JACKETS & COATS</h1>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="img">
+                <img src="../main-project-main/images/home page/1stimge.png" alt="Jackets & Coats">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="page1">
+            <div class="main">
+                <div class="image">
+                    <div class="contant">
+                        <h1>Women</h1>
+                        <p>Spring 2018</p>
+                    </div>
+                    <img src="../main-project-main/images/home page/banner-01.png" alt="Women Spring 2018">
+                    <div class="overflow">
+                        <h1>SHOP NOW</h1>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <div class="contant">
+                        <h1>Men</h1>
+                        <p>Spring 2018</p>
+                    </div>
+                    <img src="../main-project-main/images/home page/banner-02.png" alt="Men Spring 2018">
+                    <div class="overflow">
+                        <h1>SHOP NOW</h1>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <div class="contant">
+                        <h1>Accessories</h1>
+                        <p>New Trend</p>
+                    </div>
+                    <img src="../main-project-main/images/home page/belt.jpg" alt="Accessories New Trend">
+                    <div class="overflow">
+                        <h1>SHOP NOW</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="page2">
+            <div class="tital">
+                <h1>PRODUCT OVERVIEW</h1>
+            </div>
+            <div class="container">
+                <ul class="tab-manu">
+                    <li class="active" data-filter="*">All Product</li>
+                    <li data-filter=".cloth">Cloth</li>
+                    <li data-filter=".accessories">Accessories</li>
+                    <li data-filter=".belt">Belt</li>
+                    <li data-filter=".shoos">Shoes</li>
+                    <li data-filter=".watches">Watches</li>
+                </ul>
+
+                <ul class="filter">
+                    <li>
+                        <i class='bx bx-filter'></i>
+                        <p>Filter</p>
+                    </li>
+                    <li>
+                        <i class='bx bx-search-alt-2'></i>
+                        <p>Search</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="tab-item">
+                <div class="item cloth">
+                    <img src="../main-project-main/images/home page/belt2.jpg" alt="Cloth Item 1">
+                    <img src="../main-project-main/images/home page/belt3.jfif" alt="Cloth Item 2">
+                </div>
+                <div class="item accessories">
+                    <img src="../main-project-main/images/home page/cap.png" alt="Accessories">
+                </div>
+                <div class="item belt">
+                    <img src="../main-project-main/images/home page/product.jpg" alt="Belt Item 1">
+                    <img src="../main-project-main/images/home page/sart1.jpg" alt="Belt Item 2">
+                </div>
+                <div class="item shoos">
+                    <img src="../main-project-main/images/home page/sart2.jpg" alt="Shoes Item 1">
+                    <img src="../main-project-main/images/home page/shoos.jpg" alt="Shoes Item 2">
+                    <img src="../main-project-main/images/home page/shoos2.webp" alt="Shoes Item 3">
+                    <img src="../main-project-main/images/home page/shoos3.webp" alt="Shoes Item 4">
+                </div>
+                <div class="item watches">
+                    <img src="../main-project-main/images/home page/shoos4.jpg" alt="Watches Item 1">
+                    <img src="../main-project-main/images/home page/watch1.jpg" alt="Watches Item 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="footer">
+            <div class="container">
+                <ul>
+                    <div class="tital">
+                        <h1>CATEGORIES</h1>
+                    </div>
+                    <li>Women</li>
+                    <li>Men</li>
+                    <li>Shoes</li>
+                    <li>Watches</li>
+                </ul>
+                <ul>
+                    <div class="tital">
+                        <h1>HELP</h1>
+                    </div>
+                    <li>Track Order</li>
+                    <li>Returns</li>
+                    <li>Shopping</li>
+                    <li>FAQs</li>
+                </ul>
+                <ul>
+                    <div class="tital">
+                        <h1>GET IN TOUCH</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Porro asperiores.</p>
+                </ul>
+                <ul>
+                    <div class="tital">
+                        <h1>NEWSLETTER</h1>
+                    </div>
+                    <input type="text" placeholder="Enter Your Email"> <br>
+                    <button>SUBSCRIBE</button>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
