@@ -29,3 +29,13 @@ $(document).ready(function(){
     }); 
 
 });
+
+
+$(document).ready(function() {
+  // Add your jQuery effects or interactions here
+  $(".read-more").hover(function() {
+      $(this).css("background-color", "#555");
+  }, function() {
+      $(this).css("background-color", "#333");
+  });
+});
