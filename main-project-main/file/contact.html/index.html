@@ -13,6 +13,8 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> <!-- Replace with your Google Maps API key -->
     <link rel="stylesheet" href="style.css">
 
     <!-- CSS for layout and styling -->
@@ -113,5 +115,31 @@
             </nav>
         </header>
     </section>
+    <div class="content">
+        <div class="form-section">
+            <h2>Send Us A Message</h2>
+            <form id="contactForm">
+                <input type="email" id="email" placeholder="✉   Your Email Address" required>
+                <textarea id="message" placeholder="How Can We Help?" required></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2><i class="fas fa-map-marker-alt"></i> Address</h2>
+            <p>Coza Store Center 8th floor, 379 <br>Hudson St, New York, NY 10018 US</p>
+        
+            <h2><i class="fas fa-phone-alt"></i> Let's Talk</h2>
+            <p>+1 800 1236879</p>
+        
+            <h2><i class="fas fa-envelope"></i> Sale Support</h2>
+            <p><a href="mailto:contact@example.com">contact@example.com</a></p>
+        </div>
+        <!-- Map -->
+    <div class="map">
+        <!-- <div class="size-303" id="google_map" data-map-x="40.691446" data-map-y="-73.886787" data-pin="images/icons/pin.png" data-scrollwhell="0" data-draggable="1" data-zoom="11"></div> -->
+        <iframe class="size-303" id="google_map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3025.2064768555874!2d-73.88936192410986!3d40.691450038873604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDQxJzI5LjIiTiA3M8KwNTMnMTIuNCJX!5e0!3m2!1sen!2sin!4v1726727654927!5m2!1sen!2sin" width="2800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

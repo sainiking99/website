@@ -97,4 +97,94 @@ header .icon a i {
     text-decoration: none;
     color: #000;
 }
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    top: 300px;
+}
 
+.form-section {
+    flex: 1;
+}
+
+.form-section h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #161616;
+    position: absolute;
+    left: 350px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 55%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+button {
+    height: 70px;
+    width: 800px;
+    padding: 15px;
+    background-color: #131111;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 20px;
+    margin-left: 190px;
+}
+
+button:hover {
+    background-color: #ff5e5e;
+}
+ .contact-info {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    flex: 0.5;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-right: 500px;
+}
+.contact-info h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+.contact-info h2 i {
+    margin-right: 10px;
+    color: #ff6b6b; /* Icon color */
+}
+.contact-info p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #333;
+    margin: 30px;
+}
+.contact-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.map{
+    position: relative;
+    top: 700px;
+    right: 1000px;
+}
